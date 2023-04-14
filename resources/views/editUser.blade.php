@@ -8,7 +8,7 @@
       <input type="hidden" name="id" value="{{$s->id}}">
       <div class="form-group">
         <label>Name</label>
-        <input type="text" name="name" value="{{$s->name}}" class="form-control" placeholder="Nama Santri" required="">
+        <input type="text" name="name" value="{{$s->name}}" class="form-control" placeholder="User Name" required="">
       </div>
       <div class="form-group">
         <label>Email</label>

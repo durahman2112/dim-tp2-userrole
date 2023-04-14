@@ -21,15 +21,9 @@
       <td>{{$l->name}}</td>
       <td>{{$l->email}}</td>
       <td>
-        @if ($l->role === 1)
-            Administrator
-        @elseif ($l->role === 2)
-            Manager
-        @elseif ($l->role === 3)
-            Staff
-        @else
-            I don't have any role!
-        @endif    
+        @foreach($role as $r)
+          {{$r->role_id === $l->role ? $r->role_name : ''}}
+        @endforeach
     </td>
     <td>
       <a href="/user/edit/{{$l->id}}" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>

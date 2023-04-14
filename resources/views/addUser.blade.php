@@ -19,9 +19,9 @@
   <div class="form-group">
     <label>Role</label>
     <select class="form-select form-control" aria-label="Default select example" name="role" required="">
-      <option value="1">Administrator</option>
-      <option value="2">Manager</option>
-      <option value="3">Staff</option>
+      @foreach($role as $r)
+        <option value="{{$r->role_id}}">{{$r->role_name}}</option>
+      @endforeach
     </select>
   </div>
   <div class="form-group text-right">
