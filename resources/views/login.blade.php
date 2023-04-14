@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login - Aplikasi User Management</title>
+    <title>Login - Aplikasi User Management By Durahman</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container"><br>
         <div class="col-md-4 col-md-offset-4">
             <h2 class="text-center">Aplikasi User Management</h2>
+            <p class="text-center">Dibuat oleh Durahman Firmansyah Alamsyah (2502072873)</p>
             <hr>
             @if(session('error'))
             <div class="alert alert-danger">
